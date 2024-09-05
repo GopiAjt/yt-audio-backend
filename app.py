@@ -13,6 +13,10 @@ CORS(app)
 # Set up logging
 logging.basicConfig(level=logging.INFO)
 
+@app.route('/', methods=['GET'])
+def hello():
+    return "running"
+
 @app.route('/download_audio', methods=['POST'])
 def download_audio():
     data = request.json
