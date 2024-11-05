@@ -28,7 +28,7 @@ def download_audio_from_youtube(youtube_url):
             'preferredquality': '192',
         }],
         'outtmpl': 'temp_audio.%(ext)s',  # Temporary filename
-        'cookies': './cookies.txt',  # Use cookies for authentication
+        'cookies': 'cookies.txt',  # Use cookies for authentication
         'http_headers': {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36',
         },
